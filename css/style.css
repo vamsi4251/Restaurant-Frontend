@@ -147,14 +147,12 @@ body{
     align-items: left;
     justify-content: flex-start;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    color: #0F172B;
 }
 
 .card-section .card i{
     font-size: 3em;
     color: #FEA116;
-}
-.card-section .card h3,p{
-    color: #0F172B;
 }
 .card:hover{
     background-color: #FEA116;
@@ -163,3 +161,63 @@ body{
 
 /* Responsive Web Design */
 
+@media (min-width:320px) and (max-width:575px){
+    .header-section img {
+        width: 30vw;
+        height: 8vh;
+    }
+    .navbar-section ul{
+        padding: 0;
+        /* margin: 0; */
+    }
+    .navbar-section ul li{
+        display: block;
+        margin: 0;
+    }
+    .navbar-section ul li:hover{
+        border-bottom: none;
+        padding: 0;
+    }
+    .hero-unit-section{
+        flex-direction: column-reverse;
+
+    }
+    .hero-unit-image{
+        width: 80vw;
+    }
+    .hero-unit-highlight-text{
+        width: 80vw;
+    }
+    .hero-unit-highlight-text h1{
+        font-size: 2em;
+    }
+    .hero-unit-highlight-text a{
+        width: 35vw;
+    }
+    .card-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-section .card{
+        width: 70vw;
+        margin-bottom: 1em;
+    }
+    
+}
+
+@media (min-width:576px) and (max-width:992px){
+    .header-section img{
+        width: 20vw;
+        height: 10vh
+    }
+    .navbar-section ul{
+        padding: 0;
+    }
+    .hero-unit-highlight-text h1{
+        font-size: 2em;
+    }
+    .hero-unit-highlight-text a{
+        width: 20vw;
+    }
+
+}
